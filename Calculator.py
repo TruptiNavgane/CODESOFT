@@ -1,18 +1,18 @@
-def add(x, y):
+def addition(x, y):
     return x + y
 
-def subtract(x, y):
+def subtraction(x, y):
     return x - y
 
-def multiply(x, y):
+def multiplication(x, y):
     return x * y
 
-def divide(x, y):
+def division(x, y):
     if y == 0:
         return "Error! Division by zero."
     return x / y
 
-def calculator():
+def Simplecalculator():
     print("Welcome to the Simple Calculator!")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -26,15 +26,15 @@ def calculator():
     choice = input("Enter choice (1/2/3/4): ")
 
     if choice == '1':
-        print(f"{num1} + {num2} = {add(num1, num2)}")
+        print(f"{num1} + {num2} = {addition(num1, num2)}")
     elif choice == '2':
-        print(f"{num1} - {num2} = {subtract(num1, num2)}")
+        print(f"{num1} - {num2} = {subtraction(num1, num2)}")
     elif choice == '3':
-        print(f"{num1} * {num2} = {multiply(num1, num2)}")
+        print(f"{num1} * {num2} = {multiplication(num1, num2)}")
     elif choice == '4':
-        print(f"{num1} / {num2} = {divide(num1, num2)}")
+        print(f"{num1} / {num2} = {division(num1, num2)}")
     else:
-        print("Invalid input")
+        print("PLEASE ENTER VALID INPUT.")
 
 if __name__ == "__main__":
-    calculator()
+    Simplecalculator()

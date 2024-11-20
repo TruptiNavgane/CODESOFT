@@ -3,13 +3,13 @@ import random
 # Function to determine the winner
 def determine_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
-        return "It's a tie!"
+        return "It's a tie! you can try again"
     elif (user_choice == 'rock' and computer_choice == 'scissors') or \
          (user_choice == 'scissors' and computer_choice == 'paper') or \
          (user_choice == 'paper' and computer_choice == 'rock'):
-        return "You win!"
+        return "You win! you have good luck."
     else:
-        return "Computer wins!"
+        return "Computer wins! you can try again"
 
 def main():
     user_score = 0
@@ -17,13 +17,13 @@ def main():
 
     choices = ['rock', 'paper', 'scissors']
 
-    print("Welcome to Rock, Paper, Scissors Game!")
+    print("Welcome to Rock, Paper, Scissors Game! enjoy while playing")
 
     while True:
         user_choice = input("Enter your choice (rock, paper, or scissors): ").lower()
 
         if user_choice not in choices:
-            print("Invalid choice. Please choose rock, paper, or scissors.")
+            print("Invalid choice. Please choose rock, paper, or scissors.\n please choose from below options")
             continue
 
         computer_choice = random.choice(choices)
